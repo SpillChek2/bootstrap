@@ -4,15 +4,16 @@
 
 
 .breadcrumb {
+  @breadcrumbBackground: @grayDarker;
   padding: 8px 15px;
   margin: 0 0 @baseLineHeight;
   list-style: none;
-  background-color: #f5f5f5;
+  background-color: @breadcrumbBackground;
   .border-radius(@baseBorderRadius);
   > li {
     display: inline-block;
     .ie7-inline-block();
-    text-shadow: 0 1px 0 @white;
+    text-shadow: 0 1px 0 contrast(@breadcrumbBackground, @white, @black);
     > .divider {
       padding: 0 5px;
       color: #ccc;
