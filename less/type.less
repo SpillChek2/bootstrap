@@ -23,7 +23,7 @@ p {
 // Ex: 14px base font * 85% = about 12px
 small   { font-size: 85%; }
 
-strong  { font-weight: bold; }
+strong  { font-weight: 900; }
 em      { font-style: italic; }
 cite    { font-style: normal; }
 
@@ -135,7 +135,7 @@ dd {
   line-height: @baseLineHeight;
 }
 dt {
-  font-weight: bold;
+  font-weight: 900;
 }
 dd {
   margin-left: @baseLineHeight / 2;
@@ -182,7 +182,7 @@ abbr.initialism {
 blockquote {
   padding: 0 0 0 15px;
   margin: 0 0 @baseLineHeight;
-  border-left: 5px solid @grayLighter;
+  border-left: 5px solid @gray;
   p {
     margin-bottom: 0;
     #font > .shorthand(16px,300,@baseLineHeight * 1.25);
@@ -201,7 +201,7 @@ blockquote {
     float: right;
     padding-right: 15px;
     padding-left: 0;
-    border-right: 5px solid @grayLighter;
+    border-right: 5px solid @gray;
     border-left: 0;
     p,
     small {

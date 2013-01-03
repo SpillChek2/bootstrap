@@ -25,7 +25,7 @@ legend {
   margin-bottom: @baseLineHeight;
   font-size: @baseFontSize * 1.5;
   line-height: @baseLineHeight * 2;
-  color: @grayDark;
+  color: contrast(@bodyBackground, @grayDark, @grayLight);
   border: 0;
   border-bottom: 1px solid #e5e5e5;
 
@@ -349,19 +349,19 @@ input[type="checkbox"][readonly] {
 
 // Warning
 .control-group.warning {
-  .formFieldState(@warningText, @warningText, @warningBackground);
+  .formFieldState(@warningText, saturate(@warningText, 20%), @warningBackground);
 }
 // Error
 .control-group.error {
-  .formFieldState(@errorText, @errorText, @errorBackground);
+  .formFieldState(@errorText, saturate(@errorText, 20%), @errorBackground);
 }
 // Success
 .control-group.success {
-  .formFieldState(@successText, @successText, @successBackground);
+  .formFieldState(@successText, saturate(@successText, 20%), @successBackground);
 }
 // Success
 .control-group.info {
-  .formFieldState(@infoText, @infoText, @infoBackground);
+  .formFieldState(@infoText, saturate(@infoText, 20%), @infoBackground);
 }
 
 // HTML5 invalid states
@@ -460,6 +460,7 @@ select:focus:invalid {
     text-shadow: 0 1px 0 @white;
     background-color: @grayLighter;
     border: 1px solid #ccc;
+    color: @gray;
   }
   .add-on,
   .btn,

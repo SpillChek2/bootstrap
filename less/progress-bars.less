@@ -60,7 +60,7 @@
   font-size: 12px;
   text-align: center;
   text-shadow: 0 -1px 0 rgba(0,0,0,.25);
-  #gradient > .vertical(#149bdf, #0480be);
+  #gradient > .vertical(steelblue, darken(steelblue, 5%));
   .box-shadow(inset 0 -1px 0 rgba(0,0,0,.15));
   .box-sizing(border-box);
   .transition(width .6s ease);
@@ -71,7 +71,7 @@
 
 // Striped bars
 .progress-striped .bar {
-  #gradient > .striped(#149bdf);
+  #gradient > .striped(steelblue);
   .background-size(40px 40px);
 }
 
@@ -91,32 +91,32 @@
 
 // Danger (red)
 .progress-danger .bar, .progress .bar-danger {
-  #gradient > .vertical(#ee5f5b, #c43c35);
+  #gradient > .vertical(@btnDangerBackground, @btnDangerBackgroundHighlight);
 }
 .progress-danger.progress-striped .bar, .progress-striped .bar-danger {
-  #gradient > .striped(#ee5f5b);
+  #gradient > .striped(darken(@btnDangerBackground, 15%));
 }
 
 // Success (green)
 .progress-success .bar, .progress .bar-success {
-  #gradient > .vertical(#62c462, #57a957);
+  #gradient > .vertical(@btnSuccessBackground, @btnSuccessBackgroundHighlight);
 }
 .progress-success.progress-striped .bar, .progress-striped .bar-success {
-  #gradient > .striped(#62c462);
+  #gradient > .striped(darken(@btnSuccessBackground, 15%));
 }
 
 // Info (teal)
 .progress-info .bar, .progress .bar-info {
-  #gradient > .vertical(#5bc0de, #339bb9);
+  #gradient > .vertical(@btnInfoBackground, @btnInfoBackgroundHighlight);
 }
 .progress-info.progress-striped .bar, .progress-striped .bar-info {
-  #gradient > .striped(#5bc0de);
+  #gradient > .striped(darken(@btnInfoBackground, 15%));
 }
 
-// Warning (orange)
+// Warning (yellow)
 .progress-warning .bar, .progress .bar-warning {
-  #gradient > .vertical(lighten(@orange, 15%), @orange);
+  #gradient > .vertical(@btnWarningBackground, @btnWarningBackgroundHighlight);
 }
 .progress-warning.progress-striped .bar, .progress-striped .bar-warning {
-  #gradient > .striped(lighten(@orange, 15%));
+  #gradient > .striped(darken(@btnWarningBackground, 15%));
 }

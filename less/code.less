@@ -16,10 +16,15 @@ pre {
 // Inline code
 code {
   padding: 2px 4px;
-  color: #d14;
-  background-color: #f7f7f9;
-  border: 1px solid #e1e1e8;
+  color: @blue;
+  background-color: @gray;
+  border: 1px solid @black;
   white-space: nowrap;
+  text-shadow: none;
+}
+code::selection,
+code::-moz-selection {
+  background-color: @white;
 }
 
 // Blocks of code
