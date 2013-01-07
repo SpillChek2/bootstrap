@@ -32,14 +32,14 @@
 
 // Scaffolding
 // -------------------------
-@bodyBackground:        #2e2e2e;
+@bodyBackground:        @grayDarker;
 @textColor:             #b8b8b8;
 
 
 // Links
 // -------------------------
 @linkColor:             #83a900;
-@linkColorHover:        darken(@linkColor, 10%);
+@linkColorHover:        darken(@linkColor, 5%);
 
 
 // Typography
@@ -78,9 +78,9 @@
 // Tables
 // -------------------------
 @tableBackground:                   transparent; // overall background-color
-@tableBackgroundAccent:             lighten(@grayDark, 5%); // for striping
-@tableBackgroundHover:              @gray; // for hover
-@tableBorder:                       @grayLight; // table and cell border
+@tableBackgroundAccent:             lighten(@bodyBackground, 10%); // for striping
+@tableBackgroundHover:              (@tableBackgroundAccent + #111); // for hover
+@tableBorder:                       @gray; // table and cell border
 
 // Buttons
 // -------------------------
@@ -113,7 +113,7 @@
 @inputBorder:                   #ccc;
 @inputBorderRadius:             @baseBorderRadius;
 @inputDisabledBackground:       darken(@grayLighter, 10%);
-@formActionsBackground:         @grayDark;
+@formActionsBackground:         (@grayDark - #111);
 @inputHeight:                   @baseLineHeight + 10px; // base line-height + 8px vertical padding + 2px top/bottom border
 
 
@@ -172,7 +172,7 @@
 
 // Wells
 // -------------------------
-@wellBackground:                  @grayLighter;
+@wellBackground:                  #444;
 
 
 // Navbar

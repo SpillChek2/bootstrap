@@ -572,7 +572,7 @@ h2 + .row {
   margin: 15px 0;
   padding: 39px 19px 14px;
   *padding-top: 19px;
-  background-color: #2e2e2e;
+  background-color: #222;
   border: 1px solid #ddd;
   -webkit-border-radius: 4px;
      -moz-border-radius: 4px;
@@ -677,7 +677,7 @@ form.bs-docs-example {
 /* Popovers */
 .bs-docs-example-popover {
   padding-bottom: 24px;
-  background-color: #2e2e2e;
+  background-color: #222;
 }
 .bs-docs-example-popover .popover {
   position: relative;
