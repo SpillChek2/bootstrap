@@ -2237,12 +2237,12 @@ table {
 
 .table-striped tbody > tr:nth-child(odd) > td,
 .table-striped tbody > tr:nth-child(odd) > th {
-  background-color: #3c3c3c;
+  background-color: #333333;
 }
 
 .table-hover tbody tr:hover td,
 .table-hover tbody tr:hover th {
-  background-color: #4d4d4d;
+  background-color: #444444;
 }
 
 table td[class*="span"],
