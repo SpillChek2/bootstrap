@@ -1596,18 +1596,18 @@ input[type="checkbox"][readonly] {
   border-color: #319acd;
 }
 
-ng-form .control-label,
-ng\:form .control-label,
-[ng-form] .control-label,
-.ng-form .control-label,
-ng-form .help-block,
-ng\:form .help-block,
-[ng-form] .help-block,
-.ng-form .help-block,
-ng-form .help-inline,
-ng\:form .help-inline,
-[ng-form] .help-inline,
-.ng-form .help-inline {
+ng-form .control-label.ng-pristine.ng-invalid:focus,
+ng\:form .control-label.ng-pristine.ng-invalid:focus,
+[ng-form] .control-label.ng-pristine.ng-invalid:focus,
+.ng-form .control-label.ng-pristine.ng-invalid:focus,
+ng-form .help-block.ng-pristine.ng-invalid:focus,
+ng\:form .help-block.ng-pristine.ng-invalid:focus,
+[ng-form] .help-block.ng-pristine.ng-invalid:focus,
+.ng-form .help-block.ng-pristine.ng-invalid:focus,
+ng-form .help-inline.ng-pristine.ng-invalid:focus,
+ng\:form .help-inline.ng-pristine.ng-invalid:focus,
+[ng-form] .help-inline.ng-pristine.ng-invalid:focus,
+.ng-form .help-inline.ng-pristine.ng-invalid:focus {
   color: #319acd;
 }
 
@@ -1670,18 +1670,92 @@ ng\:form textarea.ng-pristine.ng-invalid:focus:focus,
           box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #73c8f1;
 }
 
-ng-form.ng-submit-fail .control-label,
-ng\:form.ng-submit-fail .control-label,
-[ng-form].ng-submit-fail .control-label,
-.ng-form.ng-submit-fail .control-label,
-ng-form.ng-submit-fail .help-block,
-ng\:form.ng-submit-fail .help-block,
-[ng-form].ng-submit-fail .help-block,
-.ng-form.ng-submit-fail .help-block,
-ng-form.ng-submit-fail .help-inline,
-ng\:form.ng-submit-fail .help-inline,
-[ng-form].ng-submit-fail .help-inline,
-.ng-form.ng-submit-fail .help-inline {
+ng-form .control-label.ng-dirty.ng-invalid,
+ng\:form .control-label.ng-dirty.ng-invalid,
+[ng-form] .control-label.ng-dirty.ng-invalid,
+.ng-form .control-label.ng-dirty.ng-invalid,
+ng-form .help-block.ng-dirty.ng-invalid,
+ng\:form .help-block.ng-dirty.ng-invalid,
+[ng-form] .help-block.ng-dirty.ng-invalid,
+.ng-form .help-block.ng-dirty.ng-invalid,
+ng-form .help-inline.ng-dirty.ng-invalid,
+ng\:form .help-inline.ng-dirty.ng-invalid,
+[ng-form] .help-inline.ng-dirty.ng-invalid,
+.ng-form .help-inline.ng-dirty.ng-invalid {
+  color: #cd314c;
+}
+
+ng-form .checkbox.ng-dirty.ng-invalid,
+ng\:form .checkbox.ng-dirty.ng-invalid,
+[ng-form] .checkbox.ng-dirty.ng-invalid,
+.ng-form .checkbox.ng-dirty.ng-invalid,
+ng-form .radio.ng-dirty.ng-invalid,
+ng\:form .radio.ng-dirty.ng-invalid,
+[ng-form] .radio.ng-dirty.ng-invalid,
+.ng-form .radio.ng-dirty.ng-invalid,
+ng-form input.ng-dirty.ng-invalid,
+ng\:form input.ng-dirty.ng-invalid,
+[ng-form] input.ng-dirty.ng-invalid,
+.ng-form input.ng-dirty.ng-invalid,
+ng-form select.ng-dirty.ng-invalid,
+ng\:form select.ng-dirty.ng-invalid,
+[ng-form] select.ng-dirty.ng-invalid,
+.ng-form select.ng-dirty.ng-invalid,
+ng-form textarea.ng-dirty.ng-invalid,
+ng\:form textarea.ng-dirty.ng-invalid,
+[ng-form] textarea.ng-dirty.ng-invalid,
+.ng-form textarea.ng-dirty.ng-invalid {
+  color: #cd314c;
+}
+
+ng-form input.ng-dirty.ng-invalid,
+ng\:form input.ng-dirty.ng-invalid,
+[ng-form] input.ng-dirty.ng-invalid,
+.ng-form input.ng-dirty.ng-invalid,
+ng-form select.ng-dirty.ng-invalid,
+ng\:form select.ng-dirty.ng-invalid,
+[ng-form] select.ng-dirty.ng-invalid,
+.ng-form select.ng-dirty.ng-invalid,
+ng-form textarea.ng-dirty.ng-invalid,
+ng\:form textarea.ng-dirty.ng-invalid,
+[ng-form] textarea.ng-dirty.ng-invalid,
+.ng-form textarea.ng-dirty.ng-invalid {
+  border-color: #e6183b;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+
+ng-form input.ng-dirty.ng-invalid:focus,
+ng\:form input.ng-dirty.ng-invalid:focus,
+[ng-form] input.ng-dirty.ng-invalid:focus,
+.ng-form input.ng-dirty.ng-invalid:focus,
+ng-form select.ng-dirty.ng-invalid:focus,
+ng\:form select.ng-dirty.ng-invalid:focus,
+[ng-form] select.ng-dirty.ng-invalid:focus,
+.ng-form select.ng-dirty.ng-invalid:focus,
+ng-form textarea.ng-dirty.ng-invalid:focus,
+ng\:form textarea.ng-dirty.ng-invalid:focus,
+[ng-form] textarea.ng-dirty.ng-invalid:focus,
+.ng-form textarea.ng-dirty.ng-invalid:focus {
+  border-color: #b8132f;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f17389;
+     -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f17389;
+          box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #f17389;
+}
+
+ng-form.ng-submit-fail .control-label.ng-invalid,
+ng\:form.ng-submit-fail .control-label.ng-invalid,
+[ng-form].ng-submit-fail .control-label.ng-invalid,
+.ng-form.ng-submit-fail .control-label.ng-invalid,
+ng-form.ng-submit-fail .help-block.ng-invalid,
+ng\:form.ng-submit-fail .help-block.ng-invalid,
+[ng-form].ng-submit-fail .help-block.ng-invalid,
+.ng-form.ng-submit-fail .help-block.ng-invalid,
+ng-form.ng-submit-fail .help-inline.ng-invalid,
+ng\:form.ng-submit-fail .help-inline.ng-invalid,
+[ng-form].ng-submit-fail .help-inline.ng-invalid,
+.ng-form.ng-submit-fail .help-inline.ng-invalid {
   color: #cd314c;
 }
 

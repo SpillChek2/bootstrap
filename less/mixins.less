@@ -201,8 +201,10 @@
 // Set the text color
   .control-label,
   .help-block,
-  .help-inline {
-    color: @textColor;
+  .help-inline  {
+      &.@{angularFieldClass} {
+        color: @textColor;
+    }
   }
 // Style inputs accordingly
   .checkbox,
@@ -211,7 +213,7 @@
   select,
   textarea {
     &.@{angularFieldClass} {
-      color: @textColor;
+        color: @textColor;
     }
   }
 

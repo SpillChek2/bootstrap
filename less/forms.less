@@ -369,7 +369,8 @@ ng-form,
 ng\:form,
 [ng-form],
 .ng-form{
-  .angularInvalidFormFieldState(@infoText, saturate(@infoText, 20%),  @infoBackground, ~"ng-pristine.ng-invalid:focus")
+  .angularInvalidFormFieldState(@infoText, saturate(@infoText, 20%),  @infoBackground, ~"ng-pristine.ng-invalid:focus");
+  .angularInvalidFormFieldState(@errorText, saturate(@errorText, 20%),  @errorBackground, ~"ng-dirty.ng-invalid");
 }
 
 ng-form,
