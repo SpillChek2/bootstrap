@@ -675,11 +675,11 @@ cite {
 }
 
 .muted {
-  color: #999999;
+  color: #555555;
 }
 
 a.muted:hover {
-  color: #808080;
+  color: #3b3b3b;
 }
 
 .text-warning {
