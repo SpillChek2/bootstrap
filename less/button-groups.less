@@ -36,7 +36,8 @@
   position: relative;
   .border-radius(0);
 }
-.btn-group > .btn + .btn {
+.btn-group > .btn + .btn,
+.btn-group > .btn {
   margin-left: -1px;
 }
 .btn-group > .btn,
@@ -64,7 +65,9 @@
 }
 // Need .dropdown-toggle since :last-child doesn't apply given a .dropdown-menu immediately after it
 .btn-group > .btn:last-child,
-.btn-group > .dropdown-toggle {
+.btn-group > .dropdown-toggle,
+.btn-group > a.btn:last-of-type,
+.btn-group > button.btn:last-of-type {
   .border-top-right-radius(@baseBorderRadius);
   .border-bottom-right-radius(@baseBorderRadius);
 }
