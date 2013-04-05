@@ -4448,17 +4448,17 @@ input[type="button"].btn-block {
 .btn-inverse {
   color: #ffffff;
   text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
-  background-color: #646464;
-  *background-color: #555555;
-  background-image: -moz-linear-gradient(top, #6f6f6f, #555555);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6f6f6f), to(#555555));
-  background-image: -webkit-linear-gradient(top, #6f6f6f, #555555);
-  background-image: -o-linear-gradient(top, #6f6f6f, #555555);
-  background-image: linear-gradient(to bottom, #6f6f6f, #555555);
+  background-color: #676767;
+  *background-color: #484848;
+  background-image: -moz-linear-gradient(top, #7b7b7b, #484848);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7b7b7b), to(#484848));
+  background-image: -webkit-linear-gradient(top, #7b7b7b, #484848);
+  background-image: -o-linear-gradient(top, #7b7b7b, #484848);
+  background-image: linear-gradient(to bottom, #7b7b7b, #484848);
   background-repeat: repeat-x;
-  border-color: #555555 #555555 #2f2f2f;
+  border-color: #484848 #484848 #222222;
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff6f6f6f', endColorstr='#ff555555', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7b7b7b', endColorstr='#ff484848', GradientType=0);
   filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 }
 
@@ -4468,13 +4468,13 @@ input[type="button"].btn-block {
 .btn-inverse.disabled,
 .btn-inverse[disabled] {
   color: #ffffff;
-  background-color: #555555;
-  *background-color: #484848;
+  background-color: #484848;
+  *background-color: #3c3c3c;
 }
 
 .btn-inverse:active,
 .btn-inverse.active {
-  background-color: #3b3b3b \9;
+  background-color: #2f2f2f \9;
 }
 
 button.btn,
@@ -4714,7 +4714,7 @@ input[type="submit"].btn.btn-mini {
 }
 
 .btn-group.open .btn-inverse.dropdown-toggle {
-  background-color: #555555;
+  background-color: #484848;
 }
 
 .btn .caret {
