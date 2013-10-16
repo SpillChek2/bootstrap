@@ -682,6 +682,10 @@ a.muted:hover {
   color: #3b3b3b;
 }
 
+.text-center{
+    text-align: center;
+}
+
 .text-warning {
   color: #ac9610;
 }
